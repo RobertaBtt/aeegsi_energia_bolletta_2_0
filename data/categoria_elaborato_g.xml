@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+
+        <record id="categoria_elaborato_g01" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">ACC</field>
+            <field name="descrizione">Accise</field>
+            <field name="categoria_id" ref="categoria_g"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_g02" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">TOT</field>
+            <field name="descrizione">Totale componenti e Accise</field>
+            <field name="categoria_id" ref="categoria_g"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_g03" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">AIT</field>
+            <field name="descrizione">Accise e Iva su Totale</field>
+            <field name="categoria_id" ref="categoria_g"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_g04" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">ACCIR</field>
+            <field name="descrizione">Accise del Ricalcolo</field>
+            <field name="categoria_id" ref="categoria_g"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+            <field name="iva_compresa" eval="False"></field>
+        </record>
+
+        <record id="categoria_elaborato_gtot" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">G</field>
+            <field name="descrizione">Totale G</field>
+            <field name="categoria_id" ref="categoria_g"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_aggregato"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_misto"></field>
+        </record>
+
+    </data>
+</openerp>

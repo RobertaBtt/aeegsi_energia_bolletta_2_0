@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!-- List View -->
+        <record id="aeegsi_energia_bolletta_2_tipo_tensione_tree_view" model="ir.ui.view">
+            <field name="name">aeegsi.energia.bolletta.2.tipo_tensione.form.view</field>
+            <field name="model">aeegsi_energia_bolletta.tipo_tensione</field>
+            <field name="arch" type="xml">
+                <tree string="Tipo Tensione">
+                    <field name="etichetta"/>
+                    <field name="descrizione"/>
+                </tree>
+            </field>
+        </record>
+
+     <!-- Form View -->
+        <record id="aeegsi_energia_bolletta_2_tipo_tensione_form_view" model="ir.ui.view">
+            <field name="name">aeegsi.energia.bolletta.2.tipo_tensione.form.view</field>
+            <field name="model">aeegsi_energia_bolletta.tipo_tensione</field>
+            <field name="arch" type="xml">
+                <form string="Tipo Tensione" version="7.0">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="etichetta"/>
+                                <field name="descrizione"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- Action -->
+        <record id="action_aeegsi_energia_bolletta_2_tipo_tensione" model="ir.actions.act_window">
+            <field name="name">Tipo Tensione</field>
+            <field name="res_model">aeegsi_energia_bolletta.tipo_tensione</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id"  eval="False"/>
+            <field name="context">{}</field>
+            <field name="help"></field>
+        </record>
+	</data>
+</openerp>

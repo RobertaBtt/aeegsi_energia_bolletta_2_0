@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="bonus_socialei" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Bonus Sociale</field>
+            <field name="categoria_id" ref="categoria_f"></field>
+        </record>
+
+    </data>
+</openerp>

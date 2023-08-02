@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="energia_quota_fissa_vendita" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Quota fissa vendita</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+        </record>
+        <record id="energia_quota_f1" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Quota energia vendita fascia f1</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+        </record>
+        <record id="energia_quota_f2" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Quota energia vendita fascia f2</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+        </record>
+        <record id="energia_quota_f3" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Quota energia vendita fascia f3</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+        </record>
+        <record id="energia_quota_f4" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Quota energia vendita fascia f4</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+        </record>
+        <record id="energia_quota_fissa_dispacciamento" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Quota fissa dispacciamento</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+        </record>
+        <record id="energia_quota_energia_dispacciamento" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Quota energia dispacciamento</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+        </record>
+        <record id="energia_quota_energia_sbilanciamento" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Quota energia sbilanciamento</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+        </record>
+        <record id="energia_quota_energia_dispacciamento_eo" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Quota energia dispacciamento (Eolico e Sicurezza)</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+        </record>
+
+        <record id="energia_quota_fissa_placet" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Quota fissa Placet</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+        </record>
+
+    </data>
+</openerp>

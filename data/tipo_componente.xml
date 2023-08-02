@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="tipo_componente_fisso" model="aeegsi_energia_bolletta.tipo_componente">
+            <field name="tipo">fisso</field>
+            <field name="descrizione">Punto di prelievo per anno</field>
+        </record>
+        <record id="tipo_componente_variabile" model="aeegsi_energia_bolletta.tipo_componente">
+            <field name="tipo">variabile</field>
+            <field name="descrizione">kWh</field>
+        </record>
+        <record id="tipo_componente_potenza" model="aeegsi_energia_bolletta.tipo_componente">
+            <field name="tipo">potenza</field>
+            <field name="descrizione">kW/anno</field>
+        </record>
+        <record id="tipo_componente_aggregato" model="aeegsi_energia_bolletta.tipo_componente">
+            <field name="tipo">aggregato</field>
+            <field name="descrizione">Aggregato</field>
+        </record>
+    </data>
+</openerp>

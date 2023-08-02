@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="categoria_sconto_1" model="aeegsi_energia_bolletta.categoria_sconto">
+            <field name="etichetta">% su Euro</field>
+            <field name="descrizione">Sconto effettuato calcolando una percentuale su un valore espresso in Euro</field>
+        </record>
+
+        <record id="categoria_sconto_2" model="aeegsi_energia_bolletta.categoria_sconto">
+            <field name="etichetta">% su Kwh</field>
+            <field name="descrizione">Sconto effettuato calcolando una percentuale su un valore espresso in Kwh</field>
+        </record>
+
+        <record id="categoria_sconto_3" model="aeegsi_energia_bolletta.categoria_sconto">
+            <field name="etichetta">Euro</field>
+            <field name="descrizione">Sconto effettuato con un importo esatto espresso in Euro</field>
+        </record>
+
+        <record id="categoria_sconto_4" model="aeegsi_energia_bolletta.categoria_sconto">
+            <field name="etichetta">Kwh</field>
+            <field name="descrizione">Sconto effettuato con un valore esatto di Kwh</field>
+        </record>
+
+    </data>
+</openerp>

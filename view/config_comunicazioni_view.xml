@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="aeegsi_energia_bolletta_conf_comuincazioni_tree_view" model="ir.ui.view">
+            <field name="name">aeegsi.gas.bolletta.conf.comunicazioni.tree</field>
+            <field name="model">aeegsi_energia_bolletta.conf_comunicazioni</field>
+             <field name="arch" type="xml">
+                <tree string="Comunicazioni">
+                    <field name="create_date"/>
+                    <field name="create_uid"/>
+                    <field name="write_uid"/>
+                    <field name="write_date"/>
+                    <field name="testo"></field>
+                    <field name="company_id"></field>
+                    <field name="creato_il"></field>
+                    <field name="tipo_id"></field>
+                </tree>
+            </field>
+        </record>
+
+        <record id="aeegsi_energia_bolletta_conf_comuincazioni_form_view" model="ir.ui.view">
+            <field name="name">aeegsi.gas.bolletta.conf.comunicazioni.form.view</field>
+            <field name="model">aeegsi_energia_bolletta.conf_comunicazioni</field>
+            <field name="arch" type="xml">
+                <form string="Comunicazione" version="7.0">
+                    <sheet>
+                        <group>
+                            <field name="testo"></field>
+                            <field name="company_id"></field>
+                            <field name="creato_il"></field>
+                            <field name="tipo_id"></field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+         <!-- Action -->
+        <record id="action_aeegsi_energia_conf_comunicazioni" model="ir.actions.act_window">
+            <field name="name">Conf. Comunicazionii</field>
+            <field name="res_model">aeegsi_energia_bolletta.conf_comunicazioni</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id"  eval="False"/>
+            <field name="context">{}</field>
+            <field name="help"></field>
+        </record>
+
+    </data>
+</openerp>

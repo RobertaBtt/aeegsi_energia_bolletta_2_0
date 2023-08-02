@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!-- List View -->
+        <record id="aeegsi_energia_bolletta_2_servizio_tree_view" model="ir.ui.view">
+            <field name="name">aeegsi.energia.bolletta.2.servizio.form.view</field>
+            <field name="model">aeegsi_energia_bolletta.servizio</field>
+            <field name="arch" type="xml">
+                <tree string="Servizio">
+                    <field name="categoria_id"/>
+                    <field name="periodo_dal"/>
+                    <field name="periodo_al"/>
+                    <field name="quantita"/>
+                    <field name="corrispettivo_unitario"/>
+                    <field name="imponibile"/>
+                </tree>
+            </field>
+        </record>
+
+     <!-- Form View -->
+        <record id="aeegsi_energia_bolletta_2_servizio_form_view" model="ir.ui.view">
+            <field name="name">aeegsi.energia.bolletta.2.servizio.form.view</field>
+            <field name="model">aeegsi_energia_bolletta.servizio</field>
+            <field name="arch" type="xml">
+                <form string="Servizio" version="7.0">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="bolletta_id"/>
+                                <field name="periodo_dal"/>
+                                <field name="unita_misura_id"/>
+                                <field name="corrispettivo_unitario"/>
+                            </group>
+                            <group>
+                                <field name="categoria_id"/>
+                                <field name="periodo_al"/>
+                                <field name="quantita"/>
+                                <field name="imponibile"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- Action -->
+        <record id="action_aeegsi_energia_bolletta_2_servizio" model="ir.actions.act_window">
+            <field name="name">Servizio</field>
+            <field name="res_model">aeegsi_energia_bolletta.servizio</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id"  eval="False"/>
+            <field name="context">{}</field>
+            <field name="help"></field>
+        </record>
+	</data>
+</openerp>

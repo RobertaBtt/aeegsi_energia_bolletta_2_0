@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="categoria_a" model="aeegsi_energia_bolletta.categoria">
+            <field name="lettera">a</field>
+            <field name="descrizione">Spesa per la materia energia</field>
+            <field name="obbligatorio">1</field>
+        </record>
+        <record id="categoria_b" model="aeegsi_energia_bolletta.categoria">
+            <field name="lettera">b</field>
+            <field name="descrizione">Spesa per il trasporto e la gestione del contatore</field>
+            <field name="obbligatorio">1</field>
+        </record>
+        <record id="categoria_c" model="aeegsi_energia_bolletta.categoria">
+            <field name="lettera">c</field>
+            <field name="descrizione">Spesa per oneri di sistema</field>
+            <field name="obbligatorio">1</field>
+        </record>
+        <record id="categoria_d" model="aeegsi_energia_bolletta.categoria">
+            <field name="lettera">d</field>
+            <field name="descrizione">Ricalcoli</field>
+        </record>
+        <record id="categoria_e" model="aeegsi_energia_bolletta.categoria">
+            <field name="lettera">e</field>
+            <field name="descrizione">Altre partite</field>
+        </record>
+        <record id="categoria_f" model="aeegsi_energia_bolletta.categoria">
+            <field name="lettera">f</field>
+            <field name="descrizione">Bonus sociale</field>
+        </record>
+        <record id="categoria_g" model="aeegsi_energia_bolletta.categoria">
+            <field name="lettera">g</field>
+            <field name="descrizione">Totale imposte e Iva</field>
+            <field name="obbligatorio">1</field>
+        </record>
+        <record id="categoria_h" model="aeegsi_energia_bolletta.categoria">
+            <field name="lettera">h</field>
+            <field name="descrizione">Canone di Abbonamento alla Televisione per uso privato</field>
+        </record>
+         <record id="categoria_i" model="aeegsi_energia_bolletta.categoria">
+            <field name="lettera">i</field>
+            <field name="descrizione">Totale della bolletta</field>
+            <field name="obbligatorio">1</field>
+        </record>
+    </data>
+</openerp>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+        <record id="categoria_elaborato_bonus_sociale" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">BSOC</field>
+            <field name="descrizione">Bonus Sociale</field>
+            <field name="categoria_id" ref="categoria_f"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_fisso"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_punto_prelievo"></field>
+        </record>
+
+    </data>
+</openerp>

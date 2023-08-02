@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <!-- Sequences for protocollo.protocollo -->
+        <record id="seq_type_protocollo" model="ir.sequence.type">
+            <field name="name">Codice Bolletta</field>
+            <field name="code">def.codice.bolletta</field>
+        </record>
+
+        <record id="seq_def_bolletta" model="ir.sequence">
+            <field name="name">Codice Bolletta</field>
+            <field name="code">def.codice.bolletta</field>
+            <field name="implementation">no_gap</field>
+            <field name="suffix">/%(year)s</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+            <field name="number_next_actual">1</field>
+        </record>
+    </data>
+</openerp>

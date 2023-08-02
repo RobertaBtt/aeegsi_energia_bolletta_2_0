@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+        <record id="categoria_elaborato_a00" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">QF</field>
+            <field name="descrizione">Quota Fissa Energia</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_fisso"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_punto_prelievo"></field>
+        </record>
+
+        <record id="categoria_elaborato_a01" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">F1</field>
+            <field name="descrizione">Consumo F1</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_a02" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">F2</field>
+            <field name="descrizione">Consumo F2</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_a03" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">F3</field>
+            <field name="descrizione">Consumo F3</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_a04" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">F4</field>
+            <field name="descrizione">Consumo F4</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+
+        <record id="categoria_elaborato_a05" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">PERF1</field>
+            <field name="descrizione">Perdite F1</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_a06" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">PERF2</field>
+            <field name="descrizione">Perdite: F2</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_a07" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">PERF3</field>
+            <field name="descrizione">Perdite: F3</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_a08" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">PERF4</field>
+            <field name="descrizione">Perdite: F4</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+
+        <record id="categoria_elaborato_a09" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">SIC</field>
+            <field name="descrizione">Costi di sicurezza (art. 45 arg. 111/06)</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+
+
+        <record id="categoria_elaborato_a12" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">EO</field>
+            <field name="descrizione">Costi prod. eolica (art. 44bis delibera 111/06)</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+
+        <record id="categoria_elaborato_a15" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">SALV</field>
+            <field name="descrizione">Oneri eser. Salvag. (art. 25bis TIS)</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+
+        <record id="categoria_elaborato_a16" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">TERNA</field>
+            <field name="descrizione">Funzionamento di Terna (art. 46 delibera 111/06)</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+
+        <record id="categoria_elaborato_a17" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">DCP</field>
+            <field name="descrizione">Disp. Capacità produttiva (art. 48 delibera 111/06)</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+
+        <record id="categoria_elaborato_a18" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">IC</field>
+            <field name="descrizione">Interromp del carico (art. 73 delibera 111/06)</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_a19" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">AR</field>
+            <field name="descrizione">Approvv. Risorse (art. 44 delibera 111/06)</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_a20" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">AGM</field>
+            <field name="descrizione">Aggregazione delle misure (art. 15.2 TIS)</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_fisso"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_punto_prelievo"></field>
+        </record>
+        <record id="categoria_elaborato_a21" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">CS</field>
+            <field name="descrizione">Costi Sbilanciamento</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+
+        <record id="categoria_elaborato_pfix" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">QPF</field>
+            <field name="descrizione">Quota Placet Fissa</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_fisso"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_punto_prelievo"></field>
+        </record>
+
+        <record id="categoria_elaborato_pvar" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">QPV</field>
+            <field name="descrizione">Quota Placet Variabile</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+
+        <record id="categoria_elaborato_atot" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">A</field>
+            <field name="descrizione">Totale A</field>
+            <field name="categoria_id" ref="categoria_a"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_aggregato"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_misto"></field>
+        </record>
+
+    </data>
+</openerp>

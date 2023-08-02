@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!-- List View -->
+        <record id="aeegsi_energia_bolletta_2_sconto_tree_view" model="ir.ui.view">
+            <field name="name">aeegsi.energia.bolletta.2.sconto.tree.view</field>
+            <field name="model">aeegsi_energia_bolletta.sconto</field>
+            <field name="arch" type="xml">
+                <tree string="Sconto">
+                    <field name="create_date"/>
+                    <field name="create_uid"/>
+                    <field name="write_uid"/>
+                    <field name="write_date"/>
+                    <field name="descrizione"/>
+                    <field name="cat_elaborato_id"/>
+                    <field name="valore"/>
+                    <field name="categoria_id"/>
+
+                </tree>
+            </field>
+        </record>
+
+     <!-- Form View -->
+        <record id="aeegsi_energia_bolletta_2_sconto_form_view" model="ir.ui.view">
+            <field name="name">aeegsi.energia.bolletta.2.sconto.form.view</field>
+            <field name="model">aeegsi_energia_bolletta.sconto</field>
+            <field name="arch" type="xml">
+                <form string="Sconto" version="7.0">
+                    <sheet>
+                        <group>
+                            <field name="descrizione"/>
+                            <field name="cat_elaborato_id" domain="[('etichetta', 'in', ('SCPER', 'SCPERC', 'SCKWH'))]"/>
+                            <field name="valore"/>
+                            <field name="categoria_id"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- Action -->
+        <record id="action_aeegsi_energia_bolletta_2_sconto" model="ir.actions.act_window">
+            <field name="name">Sconto</field>
+            <field name="res_model">aeegsi_energia_bolletta.sconto</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id"  eval="False"/>
+            <field name="context">{}</field>
+            <field name="help"></field>
+        </record>
+
+
+	</data>
+</openerp>

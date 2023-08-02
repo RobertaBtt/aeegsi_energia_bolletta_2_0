@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!-- List View -->
+        <record id="aeegsi_energia_bolletta_2_categoria_elaborato_tree_view" model="ir.ui.view">
+            <field name="name">aeegsi.energia.bolletta.2.sotto.categoria.form.view</field>
+            <field name="model">aeegsi_energia_bolletta.categoria_elaborato</field>
+            <field name="arch" type="xml">
+                <tree string="Categorie elaborato">
+                    <field name="etichetta" />
+                    <field name="descrizione"/>
+                    <field name="categoria_id"/>
+                    <field name="iva_compresa"/>
+                </tree>
+            </field>
+        </record>
+
+
+     <!-- Form View -->
+        <record id="aeegsi_energia_bolletta_2_categoria_elaborato_form_view" model="ir.ui.view">
+            <field name="name">aeegsi.energia.bolletta.2.sotto.categoria.form.view</field>
+            <field name="model">aeegsi_energia_bolletta.categoria_elaborato</field>
+            <field name="arch" type="xml">
+                <form string="Categorie elaborato" version="7.0">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="etichetta" />
+                                <field name="descrizione"/>
+                                <field name="categoria_id"/>
+                                <field name="tipo_componente_id"/>
+                                <field name="tipo_unita_di_misura_id"/>
+                                <field name="iva_compresa"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+
+        <!-- Action -->
+        <record id="action_aeegsi_energia_bolletta_2_categoria_elaborato" model="ir.actions.act_window">
+            <field name="name">Categorie Elaborato</field>
+            <field name="res_model">aeegsi_energia_bolletta.categoria_elaborato</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id"  eval="False"/>
+            <field name="context">{}</field>
+            <field name="help"></field>
+        </record>
+
+        <record id="aeegsi_energia_bolletta_categoria_elaborato_filter" model="ir.ui.view">
+            <field name="name">aeegsi_energia.bolletta.categoria.elaborato.select.inherit.filter</field>
+            <field name="model">aeegsi_energia_bolletta.categoria_elaborato</field>
+            <field name="arch" type="xml">
+                <search string="">
+                    <field name="descrizione"/>
+                    <field name="etichetta"/>
+                </search>
+            </field>
+        </record>
+
+	</data>
+</openerp>

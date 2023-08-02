@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="categoria_elaborato_b01" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">UC3V</field>
+            <field name="descrizione">UC3: quota variabile</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+
+        <record id="categoria_elaborato_b02" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">UC3F</field>
+            <field name="descrizione">UC3: quota fissa</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_fisso"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_punto_prelievo"></field>
+        </record>
+
+        <record id="categoria_elaborato_b03" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">UC6V</field>
+            <field name="descrizione">UC6: quota variabile</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+
+        <record id="categoria_elaborato_b02_" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">UC6F</field>
+            <field name="descrizione">UC6: quota fissa</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_fisso"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_punto_prelievo"></field>
+        </record>
+
+        <record id="categoria_elaborato_b04" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">UC6P</field>
+            <field name="descrizione">UC6: quota potenza</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_potenza"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kW"></field>
+        </record>
+
+        <record id="categoria_elaborato_b05_01" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">PER33</field>
+            <field name="descrizione">Penale en. Reattiva dal 33 al 75% Ea su F1 e F2</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kVarh"></field>
+        </record>
+
+        <record id="categoria_elaborato_b05" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">PER50</field>
+            <field name="descrizione">Penale en. Reattiva dal 50 al 75% Ea su F1 e F2</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kVarh"></field>
+        </record>
+
+        <record id="categoria_elaborato_b06" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">PER75</field>
+            <field name="descrizione">Penali en. Reattiva oltre 75% Ea su F1 e F2</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kVarh"></field>
+        </record>
+        <record id="categoria_elaborato_b07" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">TF</field>
+            <field name="descrizione">Quota fissa</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_fisso"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_punto_prelievo"></field>
+        </record>
+
+        <record id="categoria_elaborato_b08" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">TE900</field>
+            <field name="descrizione">Quota energia: consumi annui entro 900kWh</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+
+        <record id="categoria_elaborato_b09" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">TE1800</field>
+            <field name="descrizione">Quota energia: consumi annui da 901 a 1800kWh</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+
+        <record id="categoria_elaborato_b10" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">TE2640</field>
+            <field name="descrizione">Quota energia: consumi annui da 1801 a 2640kWh</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+
+
+        <record id="categoria_elaborato_b11" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">TE3540</field>
+            <field name="descrizione">Quota energia: consumi annui da 2641 a 3540kWh</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+
+
+        <record id="categoria_elaborato_b12" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">TE4440</field>
+            <field name="descrizione">Quota energia: consumi annui da 3541 a 4440kWh</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+
+
+        <record id="categoria_elaborato_b13" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">TE4441</field>
+            <field name="descrizione">Quota energia: consumi annui oltre 4440kWh</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+
+
+        <record id="categoria_elaborato_b14" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">TP</field>
+            <field name="descrizione">Quota potenza</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_potenza"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kW"></field>
+        </record>
+
+
+        <record id="categoria_elaborato_b15" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">CMF</field>
+            <field name="descrizione">Costi fissi di misura </field>
+            <field name="categoria_id" ref="categoria_b"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_fisso"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_punto_prelievo"></field>
+        </record>
+
+        <record id="categoria_elaborato_b16" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">CMV</field>
+            <field name="descrizione">Costi variabili di misura </field>
+            <field name="categoria_id" ref="categoria_b"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_punto_prelievo"></field>
+        </record>
+
+        <record id="categoria_elaborato_b17" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">CT</field>
+            <field name="descrizione">Costi di trasmissione</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+
+        <record id="categoria_elaborato_TRASp" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">TRASp</field>
+            <field name="descrizione">Costi di trasmissione</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_potenza"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kW"></field>
+        </record>
+
+        <record id="categoria_elaborato_btot" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">B</field>
+            <field name="descrizione">Totale B</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_aggregato"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_misto"></field>
+        </record>
+
+    </data>
+</openerp>

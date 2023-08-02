@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!-- List View -->
+        <record id="aeegsi_energia_bolletta_canone_rai_tree_view" model="ir.ui.view">
+            <field name="name">aeegsi.energia.bolletta.canone.rai.tree.view</field>
+            <field name="model">aeegsi_energia_bolletta.canone_rai</field>
+            <field name="arch" type="xml">
+                <tree string="Configurazioni Canone di Abbonamento RAI">
+                    <field name="create_date"/>
+                    <field name="create_uid"/>
+                    <field name="write_uid"/>
+                    <field name="write_date"/>
+                    <field name="canone"/>
+                    <field name="n_mesi"/>
+                    <field name="creata_il"/>
+                    <field name="data_inizio"/>
+                    <field name="data_fine"/>
+                    <field name="attivo"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Form View -->
+        <record id="aeegsi_energia_bolletta_canone_rai_form_view" model="ir.ui.view">
+            <field name="name">aeegsi_energia_bolletta.canone_rai.form.view</field>
+            <field name="model">aeegsi_energia_bolletta.canone_rai</field>
+            <field name="arch" type="xml">
+                <form string="Impostazione Canone di Abbonamento RAI" version="7.0">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="canone"/>
+                                <field name="n_mesi"/>
+                                <field name="data_inizio"/>
+                                <field name="data_fine"/>
+                                <field name="attivo"/>
+                                <field name="creata_il"/>
+
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- Action -->
+        <record id="action_bolletta_canone_rai" model="ir.actions.act_window">
+            <field name="name">Canone RAI</field>
+            <field name="res_model">aeegsi_energia_bolletta.canone_rai</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id"  eval="False"/>
+            <field name="context">{}</field>
+            <field name="help">Configurazione Canone di Abbonamento RAI</field>
+        </record>
+
+
+    </data>
+</openerp>

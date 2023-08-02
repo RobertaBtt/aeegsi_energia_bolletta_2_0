@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="tipo_unita_misura_punto_prelievo" model="aeegsi_energia_bolletta.tipo_unita_misura">
+            <field name="descrizione">Punto di prelievo</field>
+        </record>
+        <record id="tipo_unita_misura_kWh" model="aeegsi_energia_bolletta.tipo_unita_misura">
+            <field name="descrizione">kWh</field>
+        </record>
+        <record id="tipo_unita_misura_kVarh" model="aeegsi_energia_bolletta.tipo_unita_misura">
+            <field name="descrizione">kVarh</field>
+        </record>
+        <record id="tipo_unita_misura_kW" model="aeegsi_energia_bolletta.tipo_unita_misura">
+            <field name="descrizione">kW</field>
+        </record>
+        <record id="tipo_unita_misura_misto" model="aeegsi_energia_bolletta.tipo_unita_misura">
+            <field name="descrizione">Misto</field>
+        </record>
+    </data>
+</openerp>

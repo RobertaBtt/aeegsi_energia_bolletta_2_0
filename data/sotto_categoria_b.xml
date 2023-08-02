@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="trasporto_quota_fissa" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Quota fissa</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+        </record>
+        <record id="trasporto_quota_potenza" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Quota potenza</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+        </record>
+        <record id="trasporto_quota_energia_900" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Quota energia: consumi annui entro 900kWh</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+        </record>
+        <record id="trasporto_quota_energia_1800" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Quota energia: consumi annui da 901 a 1800kWh</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+        </record>
+        <record id="trasporto_quota_energia_2640" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Quota energia: consumi annui da 1801 a 2640kWh</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+        </record>
+        <record id="trasporto_quota_energia_3540" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Quota energia: consumi annui da 2641 a 3540kWh</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+        </record>
+        <record id="trasporto_quota_energia_sotto_4440" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Quota energia: consumi annui da 3541 a 4440kWh</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+        </record>
+        <record id="trasporto_quota_energia_oltre_4440" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Quota energia: consumi annui oltre 4440kWh</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+        </record>
+        <record id="trasporto_penali_reattiva_33" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Penali en. Reattiva 33/75% Ea su F1 e F2</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+        </record>
+        <record id="trasporto_penali_reattiva_sotto75" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Penali en. Reattiva 50/75% Ea su F1 e F2</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+        </record>
+        <record id="trasporto_penali_reattiva_sopra75" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Penali en. Reattiva oltre 75% Ea su F1 e F2</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+        </record>
+        <record id="trasporto_totale" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Totale B</field>
+            <field name="categoria_id" ref="categoria_b"></field>
+        </record>
+    </data>
+</openerp>

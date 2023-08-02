@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="accise" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Accise Energia Elettrica</field>
+            <field name="categoria_id" ref="categoria_g"></field>
+        </record>
+
+        <record id="accise_ricalcolate" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Accise Energia Elettrica del Ricalcolo</field>
+            <field name="categoria_id" ref="categoria_g"></field>
+        </record>
+
+        <record id="iva_e" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Iva su Altre Partite</field>
+            <field name="categoria_id" ref="categoria_g"></field>
+        </record>
+
+        <record id="iva_ric" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Iva su Ricalcoli</field>
+            <field name="categoria_id" ref="categoria_g"></field>
+        </record>
+    </data>
+</openerp>

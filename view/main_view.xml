@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <menuitem name="Bolletta Energia" id="base.aeegsi_energia_bolletta_2_root" sequence="75" />
+
+        <menuitem name="Bolletta Energia" id="menu_aeegsi_energia_bolletta_2_root" sequence="1" parent="base.aeegsi_energia_bolletta_2_root" />
+
+                <menuitem string="Lista Bollette"
+                  name="Lista Bollette"
+                  id="menu_aeegsi_energia_bolletta_2_bollette"
+                  parent="menu_aeegsi_energia_bolletta_2_root"
+                  action="action_aeegsi_energia_bolletta_2_bolletta"
+                  sequence="2" />
+
+        <menuitem name="Struttura" id="menu_aeegsi_energia_bolletta_conf" sequence="3" parent="base.aeegsi_energia_bolletta_2_root" />
+
+                <menuitem id="menu_action_aeegsi_energia_bolletta_2_categorie"
+                      parent="menu_aeegsi_energia_bolletta_conf"
+                      action="action_aeegsi_energia_bolletta_2_categoria"
+                      string="Categorie Semplice"
+                      sequence="4" />
+
+                    <menuitem id="menu_action_aeegsi_energia_bolletta_2_sotto_categorie"
+                                  parent="menu_aeegsi_energia_bolletta_conf"
+                                  action="action_aeegsi_energia_bolletta_2_sotto_categoria"
+                                  string="Categoria Dettaglio"
+                                  sequence="5" />
+
+                    <menuitem id="menu_action_aeegsi_energia_bolletta_2_categoria_elaborato"
+                          parent="menu_aeegsi_energia_bolletta_conf"
+                          action="action_aeegsi_energia_bolletta_2_categoria_elaborato"
+                          string="Categorie Elaborato"
+                          sequence="6" />
+
+                    <menuitem string="Tipo Componente"
+                              name="Tipo Componente"
+                              id="menu_aeegsi_energia_bolletta_2_tipo_componente"
+                              parent="menu_aeegsi_energia_bolletta_conf"
+                              action="action_aeegsi_energia_bolletta_2_tipo_componente"
+                              sequence="7" />
+
+                <menuitem string="Tipo Unita misura"
+                          name="Tipo Unita misura"
+                          id="menu_aeegsi_energia_bolletta_2_tipo_unita_misura"
+                          parent="menu_aeegsi_energia_bolletta_conf"
+                          action="action_aeegsi_energia_bolletta_2_tipo_unita_misura"
+                          sequence="8" />
+
+                 <menuitem string="Tipo Tensione"
+                          name="Tipo Tensione"
+                          id="menu_aeegsi_energia_bolletta_2_tipo_tensione"
+                          parent="menu_aeegsi_energia_bolletta_conf"
+                          action="action_aeegsi_energia_bolletta_2_tipo_tensione"
+                          sequence="9" />
+
+
+                <menuitem string="Tipo Mercato"
+                          name="Tipo Mercato"
+                          id="menu_aeegsi_energia_bolletta_2_tipo_mercato"
+                          parent="menu_aeegsi_energia_bolletta_conf"
+                          action="action_aeegsi_energia_bolletta_2_tipo_mercato"
+                          sequence="10" />
+
+
+        <menuitem name="Impostazioni" id="menu_aeegsi_energias_bolletta_impostazioni" sequence="11"
+                  parent="base.aeegsi_energia_bolletta_2_root" />
+
+            <menuitem name="Sconti"
+                      id="menu_aeegsi_energia_bolletta_2_sconti_root" sequence="12"
+                      parent="menu_aeegsi_energias_bolletta_impostazioni" />
+                <!--<menuitem name="Prezzi" id="menu_aeegsi_energia_bolletta_2_prezzi_root" sequence="6" parent="menu_aeegsi_energia_bolletta_2_root" />-->
+                <!--<menuitem name="Costi" id="menu_aeegsi_energia_bolletta_2_costi_root" sequence="7" parent="menu_aeegsi_energia_bolletta_2_root" />-->
+
+
+                <menuitem id="menu_action_aeegsi_energia_bolletta_2_categorie_sconto"
+                          parent="menu_aeegsi_energia_bolletta_2_sconti_root"
+                          action="action_aeegsi_energia_bolletta_2_categoria_sconto"
+                          string="Categorie Sconto"
+                          sequence="13" />
+
+                <menuitem id="menu_action_aeegsi_energia_bolletta_2_sconto"
+                          parent="menu_aeegsi_energia_bolletta_2_sconti_root"
+                          action="action_aeegsi_energia_bolletta_2_sconto"
+                          string="Sconti"
+                          sequence="14" />
+
+            <menuitem id="menu_action_aeegsi_energia_bolletta_2_conf_e"
+                      parent="menu_aeegsi_energias_bolletta_impostazioni"
+                      action="action_aeegsi_energia_conf_altre_partite"
+                      string="Altre Partite"
+                      sequence="15" />
+
+
+            <menuitem string="Canone RAI"
+                  name="Canone RAI"
+                  id="menu_aeegsi_energia_bolletta_canone_rai"
+                  parent="menu_aeegsi_energias_bolletta_impostazioni"
+                  action="action_bolletta_canone_rai"
+                  sequence="16" />
+
+            <menuitem id="menu_action_aeegsi_energia_bolletta_comunicazioni"
+                  parent="menu_aeegsi_energias_bolletta_impostazioni"
+                  action="action_aeegsi_energia_conf_comunicazioni"
+                  string="Comunicazioni"
+                  sequence="17" />
+
+                <!--Nascosto il menu Tipologie Prezzi Energia
+                <menuitem id="menu_action_aeegsi_energia_bolletta_2_tipologia_prezzo_energia"-->
+                          <!--parent="menu_aeegsi_energia_bolletta_2_prezzi_root"-->
+                          <!--action="action_aeegsi_energia_bolletta_2_tipologia_prezzo_energia"-->
+                          <!--string="Tipologie Prezzi Energia"-->
+                          <!--sequence="25" />-->
+
+                <!--Nascosto il menu Costo Acquisto
+                <menuitem id="menu_action_aeegsi_energia_bolletta_2_costo_acquisto_energia"-->
+                          <!--parent="menu_aeegsi_energia_bolletta_2_costi_root"-->
+                          <!--action="action_aeegsi_energia_bolletta_2_costo_acquisto_energia"-->
+                          <!--string="Costi acquisto Energia"-->
+                          <!--sequence="26" />-->
+
+
+        <!--<menuitem string="Righe Servizio"-->
+                  <!--name="Righe Servizio"-->
+                  <!--id="menu_aeegsi_energia_bolletta_2_servizio"-->
+                  <!--parent="menu_aeegsi_energia_bolletta_2_root"-->
+                  <!--action="action_aeegsi_energia_bolletta_2_servizio"-->
+                  <!--sequence="32" />-->
+
+    </data>
+</openerp>

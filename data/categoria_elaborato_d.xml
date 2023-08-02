@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+
+        <record id="categoria_elaborato_d01" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">RF1</field>
+            <field name="descrizione">Ricalcolo Consumo F1</field>
+            <field name="categoria_id" ref="categoria_d"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+            <field name="iva_compresa" eval="False"></field>
+        </record>
+        <record id="categoria_elaborato_d02" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">RF2</field>
+            <field name="descrizione">Ricalcolo Consumo F2</field>
+            <field name="categoria_id" ref="categoria_d"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+            <field name="iva_compresa" eval="False"></field>
+        </record>
+        <record id="categoria_elaborato_d03" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">RF3</field>
+            <field name="descrizione">Ricalcolo Consumo F3</field>
+            <field name="categoria_id" ref="categoria_d"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+            <field name="iva_compresa" eval="False"></field>
+        </record>
+        <record id="categoria_elaborato_d04" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">RF4</field>
+            <field name="descrizione">Ricalcolo Consumo F4</field>
+            <field name="categoria_id" ref="categoria_d"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+            <field name="iva_compresa" eval="False"></field>
+        </record>
+
+
+
+        <record id="categoria_elaborato_d05" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">RPERF1</field>
+            <field name="descrizione">Ricalcolo Perdita F1</field>
+            <field name="categoria_id" ref="categoria_d"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_d06" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">RPERF2</field>
+            <field name="descrizione">Ricalcolo Perdita F2</field>
+            <field name="categoria_id" ref="categoria_d"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_d07" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">RPERF3</field>
+            <field name="descrizione">Ricalcolo Perdita F3</field>
+            <field name="categoria_id" ref="categoria_d"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_d08" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">RPERF4</field>
+            <field name="descrizione">Ricalcolo Perdita F4</field>
+            <field name="categoria_id" ref="categoria_d"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_dtot" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">D</field>
+            <field name="descrizione">Totale D</field>
+            <field name="categoria_id" ref="categoria_d"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_aggregato"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_misto"></field>
+        </record>
+
+    </data>
+</openerp>

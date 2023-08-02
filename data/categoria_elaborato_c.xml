@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="categoria_elaborato_A2_01" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">A21800</field>
+            <field name="descrizione">A2: consumi annui entro 1800kWh</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_A2_02" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">A22640</field>
+            <field name="descrizione">A2: consumi annui oltre 1800 e fino a 2640kWh</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_A2_03" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">A22641</field>
+            <field name="descrizione">A2: consumi annui oltre 2640</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_A2_04" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">A2F</field>
+            <field name="descrizione">A2: quota fissa</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_fisso"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_punto_prelievo"></field>
+        </record>
+
+        <record id="categoria_elaborato_A3_01" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">A31800</field>
+            <field name="descrizione">A3: consumi annui entro 1800kWh</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_A3_02" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">A32640</field>
+            <field name="descrizione">A3: consumi annui oltre 1800 e fino a 2640kWh</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_A3_03" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">A32641</field>
+            <field name="descrizione">A3: consumi annui oltre 2640</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_A3_04" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">A3F</field>
+            <field name="descrizione">A3: quota fissa</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_fisso"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_punto_prelievo"></field>
+        </record>
+
+
+        <record id="categoria_elaborato_A4_01" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">A41800</field>
+            <field name="descrizione">A4: consumi annui entro 1800kWh</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_A4_02" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">A42640</field>
+            <field name="descrizione">A4: consumi annui oltre 1800 e fino a 2640kWh</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_A4_03" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">A42641</field>
+            <field name="descrizione">A4: consumi annui oltre 2640</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_A4_04" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">A4F</field>
+            <field name="descrizione">A4: quota fissa</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_fisso"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_punto_prelievo"></field>
+        </record>
+        
+        <record id="categoria_elaborato_A5_01" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">A51800</field>
+            <field name="descrizione">A5: consumi annui entro 1800kWh</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_A5_02" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">A52640</field>
+            <field name="descrizione">A5: consumi annui oltre 1800 e fino a 2640kWh</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_A5_03" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">A52641</field>
+            <field name="descrizione">A5: consumi annui oltre 2640</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_A5_04" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">A5F</field>
+            <field name="descrizione">A5: quota fissa</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_fisso"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_punto_prelievo"></field>
+        </record>
+        
+        
+
+        <record id="categoria_elaborato_AS_01" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">AS1800</field>
+            <field name="descrizione">AS: consumi annui entro 1800kWh</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_AS_02" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">AS2640</field>
+            <field name="descrizione">AS: consumi annui oltre 1800 e fino a 2640kWh</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_AS_03" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">AS2641</field>
+            <field name="descrizione">AS: consumi annui oltre 2640</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_AS_04" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">ASF</field>
+            <field name="descrizione">AS: quota fissa</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_fisso"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_punto_prelievo"></field>
+        </record>
+
+        <record id="categoria_elaborato_AE_01" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">AE1800</field>
+            <field name="descrizione">AE: consumi annui entro 1800kWh</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_AE_02" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">AE2640</field>
+            <field name="descrizione">AE: consumi annui oltre 1800 e fino a 2640kWh</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_AE_03" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">AE2641</field>
+            <field name="descrizione">AE: consumi annui oltre 2640</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_AE_04" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">AEF</field>
+            <field name="descrizione">AE: quota fissa</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_fisso"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_punto_prelievo"></field>
+        </record>
+
+        <record id="categoria_elaborato_UC4_01" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">UC41800</field>
+            <field name="descrizione">UC4: consumi annui entro 1800kWh</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_UC4_02" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">UC42640</field>
+            <field name="descrizione">UC4: consumi annui oltre 1800 e fino a 2640kWh</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_UC4_03" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">UC42641</field>
+            <field name="descrizione">UC4: consumi annui oltre 2640</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_UC4_04" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">UC4F</field>
+            <field name="descrizione">UC4: quota fissa</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_fisso"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_punto_prelievo"></field>
+        </record>
+
+        <record id="categoria_elaborato_UC7_01" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">UC71800</field>
+            <field name="descrizione">UC7: consumi annui entro 1800kWh</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_UC7_02" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">UC72640</field>
+            <field name="descrizione">UC7: consumi annui oltre 1800 e fino a 2640kWh</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_UC7_03" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">UC72641</field>
+            <field name="descrizione">UC7: consumi annui oltre 2640</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_UC7_04" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">UC7F</field>
+            <field name="descrizione">UC7: quota fissa</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_fisso"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_punto_prelievo"></field>
+        </record>
+
+        <record id="categoria_elaborato_MCT_01" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">MCT1800</field>
+            <field name="descrizione">MCT: consumi annui entro 1800kWh</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_MCT_02" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">MCT2640</field>
+            <field name="descrizione">MCT: consumi annui oltre 1800 e fino a 2640kWh</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_MCT_03" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">MCT2641</field>
+            <field name="descrizione">MCT: consumi annui oltre 2640</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_MCT_04" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">MCTF</field>
+            <field name="descrizione">MCT: quota fissa</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_fisso"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_punto_prelievo"></field>
+        </record>
+
+
+
+
+         <record id="categoria_elaborato_Arim_01" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">Arim1800</field>
+            <field name="descrizione">Arim: consumi annui entro 1800kWh</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+
+        <record id="categoria_elaborato_Arim_02" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">Arim2640</field>
+            <field name="descrizione">Arim: consumi annui oltre 1800 e fino a 2640kWh</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_Arim_03" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">Arim2641</field>
+            <field name="descrizione">Arim: consumi annui oltre 2640</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_Arim_04" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">ArimF</field>
+            <field name="descrizione">Arim: quota fissa</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_fisso"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_punto_prelievo"></field>
+        </record>
+
+
+        <record id="categoria_elaborato_Asos_01" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">Asos1800</field>
+            <field name="descrizione">Asos: consumi annui entro 1800kWh</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_Asos_02" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">Asos2640</field>
+            <field name="descrizione">Asos: consumi annui oltre 1800 e fino a 2640kWh</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_Asos_03" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">Asos2641</field>
+            <field name="descrizione">Asos: consumi annui oltre 2640</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_variabile"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kWh"></field>
+        </record>
+        <record id="categoria_elaborato_Asos_04" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">AsosF</field>
+            <field name="descrizione">Asos: quota fissa</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_fisso"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_punto_prelievo"></field>
+        </record>
+
+        <record id="categoria_elaborato_Arim_potenza" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">ArimP</field>
+            <field name="descrizione">Arim: quota potenza</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_potenza"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kW"></field>
+        </record>
+
+        <record id="categoria_elaborato_Asos_potenza" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">AsosP</field>
+            <field name="descrizione">Asos: quota potenza</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_potenza"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_kW"></field>
+        </record>
+
+
+
+        <record id="categoria_elaborato_C_TOT" model="aeegsi_energia_bolletta.categoria_elaborato">
+            <field name="etichetta">C</field>
+            <field name="descrizione">Totale C</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+            <field name="tipo_componente_id" ref="tipo_componente_aggregato"></field>
+            <field name="tipo_unita_di_misura_id" ref="tipo_unita_misura_misto"></field>
+        </record>
+
+
+    </data>
+</openerp>

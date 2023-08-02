@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="aeegsi_energia_bolletta_conf_altre_partite_tree_view" model="ir.ui.view">
+            <field name="name">aeegsi.energia.bolletta.cong.altre.partite.tree.view</field>
+            <field name="model">aeegsi_energia_bolletta.conf_altre_partite</field>
+            <field name="arch" type="xml">
+                <tree string="Configurazione Spese Altre Partite">
+                    <field name="create_date"/>
+                    <field name="create_uid"/>
+                    <field name="write_uid"/>
+                    <field name="write_date"/>
+                    <field name="descrizione"/>
+                    <field name="cat_elaborato_id"/>
+                    <field name="valore"/>
+                    <field name="provenienza_iva"/>
+                    <field name="iva"/>
+                    <field name="creata_il"/>
+
+                </tree>
+            </field>
+        </record>
+
+        <record id="aeegsi_energia_bolletta_conf_altre_partite_form_view" model="ir.ui.view">
+            <field name="name">aeegsi.energia.bolletta.cong.altre.partite.form.view</field>
+            <field name="model">aeegsi_energia_bolletta.conf_altre_partite</field>
+            <field name="arch" type="xml">
+                <form string="Configurazione Spese Altre Partite" version="7.0">
+                    <sheet>
+                        <group>
+                            <group>
+
+                                <field name="cat_elaborato_id" domain="[('categoria_id.lettera', '=', 'e')]"/>
+                                <field name="provenienza_iva"/>
+                                <field name="tipo_tensione"/>
+                                <field name="use"/>
+                                <field name="creata_il"/>
+                            </group>
+                            <group>
+                                <field name="valore"/>
+                                <field name="iva" attrs="{'invisible':[('provenienza_iva', '==', 'IvaContratto')] }" />
+                                <field name="descrizione"/>
+                            </group>
+
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="action_aeegsi_energia_conf_altre_partite" model="ir.actions.act_window">
+            <field name="name">Conf. Altre Partite</field>
+            <field name="res_model">aeegsi_energia_bolletta.conf_altre_partite</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id"  eval="False"/>
+            <field name="context">{}</field>
+            <field name="help"></field>
+        </record>
+
+
+	</data>
+</openerp>

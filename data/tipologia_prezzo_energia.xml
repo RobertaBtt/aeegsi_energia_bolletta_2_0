@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="tipologia_prezzo_fisso_6" model="aeegsi_energia_bolletta.tipologia_prezzo_energia">
+            <field name="etichetta">Fisso 6</field>
+            <field name="descrizione">Prezzo Fisso 6 mesi</field>
+            <field name="durata_in_mesi">6</field>
+        </record>
+        <record id="tipologia_prezzo_fisso_12" model="aeegsi_energia_bolletta.tipologia_prezzo_energia">
+            <field name="etichetta">Fisso 12</field>
+            <field name="descrizione">Prezzo Fisso 12 mesi</field>
+            <field name="durata_in_mesi">12</field>
+        </record>
+        <record id="tipologia_prezzo_fisso_18" model="aeegsi_energia_bolletta.tipologia_prezzo_energia">
+            <field name="etichetta">Fisso 18</field>
+            <field name="descrizione">Prezzo Fisso 18 mesi</field>
+            <field name="durata_in_mesi">18</field>
+        </record>
+        <record id="tipologia_prezzo_fisso_24" model="aeegsi_energia_bolletta.tipologia_prezzo_energia">
+            <field name="etichetta">Fisso 24</field>
+            <field name="descrizione">Prezzo Fisso 24 mesi</field>
+            <field name="durata_in_mesi">24</field>
+        </record>
+        <record id="tipologia_prezzo_pun_orario" model="aeegsi_energia_bolletta.tipologia_prezzo_energia">
+            <field name="etichetta">PUN Orario</field>
+            <field name="descrizione">Prezzo PUN Orario</field>
+            <field name="durata_in_mesi">1</field>
+        </record>
+        <record id="tipologia_prezzo_pun_medio" model="aeegsi_energia_bolletta.tipologia_prezzo_energia">
+            <field name="etichetta">PUN medio</field>
+            <field name="descrizione">Prezzo PUN Medio per fasce</field>
+            <field name="durata_in_mesi">1</field>
+        </record>
+        <record id="tipologia_prezzo_pun_indicizzato" model="aeegsi_energia_bolletta.tipologia_prezzo_energia">
+            <field name="etichetta">PUN indicizzato</field>
+            <field name="descrizione">Prezzo PUN indicizzato</field>
+            <field name="durata_in_mesi">1</field>
+        </record>
+    </data>
+</openerp>

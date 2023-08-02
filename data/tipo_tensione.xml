@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="tipo_tensione_bassa" model="aeegsi_energia_bolletta.tipo_tensione">
+            <field name="etichetta">BT</field>
+            <field name="descrizione">Bassa Tensione</field>
+        </record>
+        <record id="tipo_tensione_media" model="aeegsi_energia_bolletta.tipo_tensione">
+            <field name="etichetta">MT</field>
+            <field name="descrizione">Media Tensione</field>
+        </record>
+        <record id="tipo_tensione_alta" model="aeegsi_energia_bolletta.tipo_tensione">
+            <field name="etichetta">AT</field>
+            <field name="descrizione">Alta Tensione</field>
+        </record>
+        <record id="tipo_tensione_altissima" model="aeegsi_energia_bolletta.tipo_tensione">
+            <field name="etichetta">AAT</field>
+            <field name="descrizione">Altissima Tensione</field>
+        </record>
+
+    </data>
+</openerp>

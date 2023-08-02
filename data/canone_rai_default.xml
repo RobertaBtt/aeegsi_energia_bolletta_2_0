@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="canone_rai_001" model="aeegsi_energia_bolletta.canone_rai">
+            <field name="canone">100</field>
+            <field name="n_mesi">10</field>
+            <field name="data_inizio">2016-01-01</field>
+            <field name="data_fine">2016-10-01</field>
+            <field name="attivo">True</field>
+            <field name="creata_il" eval="(DateTime.now())"></field>
+        </record>
+
+    </data>
+</openerp>

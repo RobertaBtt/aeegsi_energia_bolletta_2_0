@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="canone_rai" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Canone di Abbonamento alla Televisione per uso privato</field>
+            <field name="categoria_id" ref="categoria_h"></field>
+        </record>
+
+        <record id="canone_rai_rimborso" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Rimborso Canone di Abbonamento alla Televisione per uso privato</field>
+            <field name="categoria_id" ref="categoria_h"></field>
+        </record>
+    </data>
+</openerp>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="quota_fissa" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Quota fissa</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+        </record>
+        <record id="quota_energia_1800" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Quota energia: consumi annui entro 1800kWh</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+        </record>
+         <record id="quota_energia_2640" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Quota energia: consumi annui da 1801 a 2640kWh</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+        </record>
+         <record id="quota_energia_2641" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Quota energia: consumi annui oltre 2640kWh</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+        </record>
+
+        <record id="quota_potenza_c" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Quota potenza</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+        </record>
+
+        <record id="oneri_totale" model="aeegsi_energia_bolletta.sotto_categoria">
+            <field name="descrizione">Totale C</field>
+            <field name="categoria_id" ref="categoria_c"></field>
+        </record>
+    </data>
+</openerp>

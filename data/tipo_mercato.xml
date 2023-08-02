@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="tipo_mercato_maggior_tutela" model="aeegsi_energia_bolletta.tipo_mercato">
+            <field name="descrizione">Maggior tutela</field>
+        </record>
+        <record id="tipo_mercato_mercato_libero" model="aeegsi_energia_bolletta.tipo_mercato">
+            <field name="descrizione">Mercato libero</field>
+        </record>
+    </data>
+</openerp>

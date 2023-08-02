@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="aeegsi_energia_bolletta_conf_comunicazioni_tipo_tree_view" model="ir.ui.view">
+            <field name="name">aeegsi.gas.bolletta.conf.comunicazioni.tipo.tree</field>
+            <field name="model">aeegsi_energia_bolletta.conf_comunicazioni_tipo</field>
+             <field name="arch" type="xml">
+                <tree string="Tipo Comunicazioni">
+                    <field name="create_date"/>
+                    <field name="create_uid"/>
+                    <field name="write_uid"/>
+                    <field name="write_date"/>
+                    <field name="tipo"></field>
+                    <field name="descrizione"></field>
+                </tree>
+            </field>
+        </record>
+
+        <record id="aeegsi_energia_bolletta_conf_comunicazioni_tipo_form_view" model="ir.ui.view">
+            <field name="name">aeegsi.gas.bolletta.conf.comunicazioni.tipo.form.view</field>
+            <field name="model">aeegsi_energia_bolletta.conf_comunicazioni_tipo</field>
+            <field name="arch" type="xml">
+                <form string="Tipo Comunicazioni" version="7.0">
+                    <sheet>
+                        <group>
+                            <field name="tipo"></field>
+                            <field name="descrizione"></field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</openerp>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="comunicazione_generica" model="aeegsi_energia_bolletta.conf_comunicazioni_tipo">
+            <field name="tipo">A</field>
+            <field name="descrizione">Comunicazione generica, riquadro informativo</field>
+        </record>
+        <record id="comunicazione_autoletture" model="aeegsi_energia_bolletta.conf_comunicazioni_tipo">
+            <field name="tipo">B</field>
+            <field name="descrizione">Riquadro informativo autoletture</field>
+        </record>
+        <record id="comunicazione_guasti" model="aeegsi_energia_bolletta.conf_comunicazioni_tipo">
+            <field name="tipo">C</field>
+            <field name="descrizione">Riquadro guasti</field>
+        </record>
+
+        <record id="comunicazione_prima_bolletta" model="aeegsi_energia_bolletta.conf_comunicazioni_tipo">
+            <field name="tipo">D</field>
+            <field name="descrizione">Riquadro prima bolletta</field>
+        </record>
+        <record id="comunicazione_fonti_produzione" model="aeegsi_energia_bolletta.conf_comunicazioni_tipo">
+            <field name="tipo">E</field>
+            <field name="descrizione">Fonti della produzione nazionale</field>
+        </record>
+        <record id="comunicazione_energia_verde" model="aeegsi_energia_bolletta.conf_comunicazioni_tipo">
+            <field name="tipo">F</field>
+            <field name="descrizione">Informazioni Energia Verde</field>
+        </record>
+        <record id="comunicazione_informazioni_reclami" model="aeegsi_energia_bolletta.conf_comunicazioni_tipo">
+            <field name="tipo">G</field>
+            <field name="descrizione">Riquadro informazioni e reclami</field>
+        </record>
+
+        <record id="comunicazione_informazioni_banner_fondo_pagina1" model="aeegsi_energia_bolletta.conf_comunicazioni_tipo">
+            <field name="tipo">H</field>
+            <field name="descrizione">Banner Fondo prima pagina 1</field>
+        </record>
+
+    </data>
+</openerp>
